@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Gidi Meals</title>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./manifest.json">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+        
+        <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+        <script src="./js/dialog-polyfill.js"></script>
+        <script src="./js/addtohomescreen.min.js"></script>
+        <script src="./js/jquery-3.1.1.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="./css/inline.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Gidi Meals</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <a class="mdl-navigation__link open-cart" href="#">
+                        <i class="material-icons mdl-badge--overlap cart-icon" data-badge="0">shopping_cart</i>
+                    </a>
+            </header>
+            <div class="mdl-layout__drawer">
+                <div class="mdl-card">
+                    <div class="mdl-card__title">
+                        <h5>
+                            <div class="mdl-card__title-text">
+                                <img class="avatar" src="./img/avatar.jpg" alt="">
+                                <div></div>
+                            </div>
+                            <div class="mdl-card__subtitle-text"></div>
+                        </h5>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Default shipping address:<br/> Exolve - 1A Hughes Avenue, off Hebert Macaulay Street, Yaba Lagos.
+                    </div>
+                </div>
+                <span class="mdl-layout-title">
+
+                </span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#">Menu</a>
+                    <a class="mdl-navigation__link open-cart" href="#"><span class="cart-icon" data-badge="0">Cart</span></a>
+                    <!-- <a class="mdl-navigation__link" href="#">Dane adresowe</a> -->
+                    <a class="mdl-navigation__link open-user-details" href="#">Profile Details</a>
+                    <a class="mdl-navigation__link" href="#">Order History</a>
+                    <a class="mdl-navigation__link" href="#">Log out</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div class="pizza-list" hidden>
+                        <ul class="mdl-list"></ul>
+                    </div>
+
+                    <div class="spinner">
+                        <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+                    </div>
+
+                    <div class="templates" hidden>
+                        <ul>
+                            <li class="mdl-list__item mdl-list__item--two-line pizzaListItemTemplate">
+                                <span class="mdl-list__item-primary-content">
+                                    <img src="" class="pizza-image mdl-list__item-avatar" alt="">
+                                    <span class="pizza-name"></span>
+                                    <span class="mdl-list__item-sub-title pizza-price"></span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content">
+                                    <a class="mdl-list__item-secondary-action add-to-cart" href="#"><i class="material-icons">add_shopping_cart</i></a>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="mdl-list__item mdl-list__item--two-line cartListItemTemplate">
+                                <span class="mdl-list__item-primary-content">
+                                    <img src="" class="pizza-image mdl-list__item-avatar" alt="">
+                                    <span class="pizza-name"></span>
+                                    <span class="mdl-list__item-sub-title pizza-price"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <dialog id="pizza-dialog">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h4 class="pizza-name">ABAK ATAMA SOUP</h4>
+                            </div>
+                            <div class="mdl-card__media">
+                                <img class="pizza-image" src="./img/gidi-atama-soup.jpeg" alt="">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <div>Price: <span class="pizza-price"> &#8358; 1,999.00</span></div>
+                                <div>Components: <span class="pizza-ingredients">Beef (1/2 kilo), Fresh or smoked fish (1 medium size), Cow skin (10 medium pieces), Stockfish head (1 medium head) </span></div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <button type="button" class="mdl-button close">Close</button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button add-to-cart mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">add_shopping_cart</i>
+                                </button>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <dialog id="cart-dialog">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Cart</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <ul class="mdl-list cart-list"></ul>
+                                <div>
+                                    Total Amount: <span class="total-price"></span>
+                                </div>
+                                <div>
+                                    <h4>Delivery Address</h4>
+                                    <p>
+                                        1A Hughes Avenue, off Hebert Macaulay Street, Yaba Lagos.<br>
+                                        Haykins
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Pay
+                                </a>
+                                <button type="button" class="mdl-button close">Close</button>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <dialog id="user-details-dialog">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">User's Profile</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+                                  <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="name-field" required="true">
+                                    <label class="mdl-textfield__label" for="name-field">First Name</label>
+                                  </div>
+                                  <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="surname-field" required="true">
+                                    <label class="mdl-textfield__label" for="surname-field">Last Name</label>
+                                  </div>
+                                  <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="email-field" required="true">
+                                    <label class="mdl-textfield__label" for="email-field">Email</label>
+                                  </div>
+                                </form>
+                                <div class="user-details-spinner" style="text-align: center;">
+                                    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner"></div>
+                                </div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect save">
+                                Save
+                                </a>
+                                <button type="button" class="mdl-button close">Cancel</button>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <div class="mdl-js-snackbar mdl-snackbar">
+                        <div class="mdl-snackbar__text"></div>
+                        <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBiiF-X6zgN37tAhm2dDe8IvoAnnNr4efg",
+            authDomain: "progressive-pizza.firebaseapp.com",
+            databaseURL: "https://progressive-pizza.firebaseio.com",
+            storageBucket: "progressive-pizza.appspot.com",
+            messagingSenderId: "939758477905"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

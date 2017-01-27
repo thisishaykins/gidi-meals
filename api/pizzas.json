@@ -1,0 +1,128 @@
+[
+    {
+        "name": "ABAK ATAMA SOUP",
+        "price": 1999.90,
+        "description": "Periwinkles, stockfish, Palm fruit, Atama and other spices are what makes up this nutritious flavoured soup.",
+        "ingredients": [
+            "Beef (1/2 kilo), Fresh or smoked fish (1 medium size), Cow skin (10 medium pieces), Stockfish head (1 medium head) ",
+            "1 cup of Periwinkle in shell, 1 small bunch of Atama leaves, Palm fruit, 3 tablespoons of ground crayfish, Uyayak (local spice)",
+            "1Knorr cube, 2½ litres of Water (for extraction of the oily liquid), Salt to taste, Pepper"
+        ],
+        "photo": "gidi-atama-soup.jpeg"
+    },
+    {
+        "name": "BANGA RICE",
+        "price": 3300.00,
+        "description": "The great taste of Banga in rice, your taste buds never knew they could blend beautifully.",
+        "ingredients": [
+            "Palm fruit extract - either made from scratch or in a can, 1 Tsp Banga spices, Crayfish (optional), Smoked fish",
+            "Oburunbebe stick (optional), Beef stock, Salt, Knorr cubes",
+            "Rice, Chopped red onions, Dry or fresh pepper"
+        ],
+        "photo": "gidi-banga-rice.jpeg"
+    },
+    {
+        "name": "BANGA SOUP",
+        "price": 2550.90,
+        "description": "Beef, Dryfish, Crayfish makes up this recipe. Scent leaves just tops it for us. It can be eaten with starch, Garri, Semovita.",
+        "ingredients": [
+            "1 kg Palm Fruits, Beef, Dry Fish",
+            "Vegetable: Scent Leaves for Ofe Akwu or Dried & Crushed bitter leaves for Delta-style Banga",
+            "Soup, Onions, Crayfish (You can choose to use it blended as you desire), Pepper (to taste)",
+            "Ogiri Okpei (Iru), Knorr Chicken, Salt to taste"
+        ],
+        "photo": "gidi-banga-soup.jpeg"
+    },
+    {
+        "name": "BBQ CHICKEN WITH BUFFALO CHILLI RUB (NIGERIAN HOT)",
+        "price": 2020.90,
+        "description": "Tasty BBQ Chicken like you've never had it before. This chilli rub adds extra depth to your meal. Try it out now!",
+        "ingredients": [
+            "KNORR chicken stock, Fresh thyme, 1 clove garlic, crushed",
+            "Mayonnaise, Brown sugar, Cayene pepper,Chicken pieces"
+        ],
+        "photo": "gidi-BBQ-Chicken-Pieces.jpeg"
+    },
+    {
+        "name": "BEEF STEW WITH PUMPKIN LEAVES",
+        "price": 2440.90,
+        "description": "Try this new healthy pumpkin beef stew with a combination of Ugu leaves and fresh tomatoes.",
+        "ingredients": [
+            "4 Medium Fresh Tomatoes, 50 grams Tomato paste, 65ml Vegetable Oil, 500 grams Lean Beef",
+            "2 Onions, 1 Tatase (Red) Pepper, 5 Iron Fortified Knorr Stock Cubes, 1 Tbsp. Thyme",
+            "1 Tbsp. Curry, 1 big bunch of Pumpkin Leaves (ugu), 775 grams Long Grain White Rice"
+        ],
+        "photo": "gidi-beef-stew.png"
+    },
+    {
+        "name": "BLACK SOUP",
+        "price": 2700.50,
+        "description": "A combination of spices, Offal’s, vegetables brings about this nutritious tasty meal that will leave a tingle feeling after one trial.",
+        "ingredients": [
+            "1 1/2 cups of blended bitter leaves, 1 cup of Efinrin - basil is a good substitute, Assorted Meat, Assorted offals",
+            "1 big piece of stock fish, 1 piece of smoked fish, 2 - 3 pieces of ata rodo, 1/2 cup of crayfish",
+            "1 1/2 cooking spoon of Palm nut cream, Knorr cubes, Salt"
+        ],
+        "photo": "gidi-black-soup.jpeg"
+    },
+    {
+        "name": "DODORISHI",
+        "price": 2600.90,
+        "description": "Meat, bay leaves, plantain & pepper sauce makes up this appetizing dish. It can be served as lunch or dinner. Click to get the recipe.",
+        "ingredients": [
+            "Half kilo of assorted meats (beef, goat meats, saki, cowleg, snails, chicken - you can pick and choose what type of meats to add)",
+            "5 Chili peppers, 6 Balls of tomatoes, 1 red bell pepper (tatashe), 1 green pepper, 1 yellow pepper",
+            "2 Onions, Curry powder, Knorr stew seasoning powder, Knorr cubes",
+            "Thyme, Bay leaves, Salt, Vegetable oil/cooking butter, 2 - 3 pieces of ripe plantains."
+        ],
+        "photo": "gidi-dodorishi.jpeg"
+    },
+    {
+        "name": "EDIKANG IKONG SOUP",
+        "price": 2800.90,
+        "description": "Known to be one of the most nutritious soup, garnished with assorted meat &fish and fresh vegetables, this Efik recipe will keep you wanting more.",
+        "ingredients": [
+            "3 bunches of chopped pumpkin leaves (ugwu), 1 bunch of water leaves",
+            "3 cups beef/kpomo/shaki/goat meat, 2 tablespoons crayfish",
+            "1/2 cup palm oil, 2 medium onions",
+            "1 cup of periwinkles (optional), 2 Knorr cubes"
+        ],
+        "photo": "gidi-edikangikong-soup.jpeg"
+    },
+    {
+        "name": "EFO RIRO",
+        "price": 2650.90,
+        "description": "Known to originate from the Yoruba land, Efo riro is a rich vegetable meal which can be eaten with Garri, rice and yam.",
+        "ingredients": [
+            "4 bunches of spinach, 6 medium fresh tomatoes, 1 Medium onion",
+            "1 yellow scotch bonnet also called yellow atarodo (optional), 1 Tablespoon locust beans/iru (optional), 4 Fish cutlets (any white fish)",
+            "2 tablespoons ground crayfish, 1 cup of chicken stock",
+            "50g smoked haddock or smoked mackerel, 100ml palm oil, 2 Knorr cubes."
+        ],
+        "photo": "gidi-eforiro.jpeg"
+    },
+    {
+        "name": "Egusi Soup",
+        "price": 2060.90,
+        "description": "Egusi Soup, also known as melon seed soup, is a healthy and easy dinner recipe that is sure to make your mouth water. Made with a variety of vegetables, this meal is enriched with nature’s earthy goodness and will definitely leave you licking your fingers!",
+        "ingredients": [
+            "200 g of Egusi seed, 400 g of beef, 50 g of cooked and boned stock fish pieces,",
+            "3 Tbsp. (45ml) of ground dried crayfish, 1 small bunch of Ugwu or bitter leaves, 50 ml of palm oil,",
+            "2 Knorr Stock Cubes, 1 small onions, 4 large fresh tomatoes,",
+            "1 tsp (5ml) ground chilli powder."
+        ],
+        "photo": "gidi-egusi-soup.jpeg"
+    },
+    {
+        "name": "Groundnut Soup",
+        "price": 2850.00,
+        "description": "Groundnut soup is tasty and nutritious, garnishing with vegetable just makes it better! It is best enjoyed with swallow meals",
+        "ingredients": [
+            "500g raw peeled groundnuts (peanuts), Assorted meat & fish (Beef), Shaki (cow tripe)",
+            "Dry fish OR Stock fish), Palm Oil, A small bunch of Pumpkin leaves",
+            "Spinach or Bitterleaf, 2 tablespoons ground crayfish, Knorr Soup seasoning",
+            "Salt (to taste) & ground dry pepper."
+        ],
+        "photo": "gidi-groundnut-soup.jpeg"
+    }
+]
