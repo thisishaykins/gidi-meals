@@ -295,5 +295,6 @@ dialog {
     text-align: center; }
   dialog img {
     border-radius: 5%;
-    margin: 15px 0px 0; 
+    margin: 15px 0px 0;
+    width: 100%; 
   }
