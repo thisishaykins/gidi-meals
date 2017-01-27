@@ -141,7 +141,7 @@
             var item = app.pizzaListItemTemplate.cloneNode(true);
             item.classList.remove('pizzaListItemTemplate');
             item.querySelector('.pizza-price').textContent
-                                            = pizza.price.toFixed(2) + ' PLN';
+                                            = '₦' + pizza.price.toFixed(2);
             item.querySelector('.pizza-name').textContent = pizza.name;
             item.querySelector('.pizza-image')
                 .setAttribute('src', './img/' + pizza.photo);
@@ -164,7 +164,7 @@
     app.showPizzaDialog = function(pizza) {
         var item = app.pizzaDialog;
         item.querySelector('.pizza-price').textContent
-                                            =  '₦' + pizza.price.toFixed(2);
+                                            = '₦' + pizza.price.toFixed(2);
         item.querySelector('.pizza-name').textContent = pizza.name;
         item.querySelector('.pizza-image')
             .setAttribute('src', './img/' + pizza.photo);
